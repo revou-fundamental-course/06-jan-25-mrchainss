@@ -8,11 +8,31 @@
 
 <!-- Header -->
 <header>
-    <div class="customdiv">
-        <div class="div3">
+    <div class="divheader">
+        <div class="divkanan">
             <img class="circle2" src="./etc/Doom.png">
-
+            <div>
+                <button>
+                    <a href="Coding.html" target="_blank">
+                        Home
+                    </a>
+                </button>
+                <button>
+                    <a href="ourprofile.html" target="_blank">
+                    Our Profile
+                    </a>
+                </button>
+                <button onclick="window.open('Portofolio.html','_blank');">
+                    Portofolio
+                </button>
+                <button id="message-us-button">
+                    Message Us
+                </button>
+            </div>
         </div>
+    </div>
+    </div>
+    </div>
     </div>
 </header>
 
@@ -21,7 +41,7 @@
     <!-- 1 section -->
     <div class="customdiv">
         <div>
-            <h2>Hi name, Welcome To Website</h2>
+            <h2>Hi <span id="name">name</span>, Welcome To Website</h2>
             <p> Ini adalah website latihan pertama</p>
         </div>
         <img src="./etc/Main.jpg">
@@ -47,30 +67,30 @@
     </div>
 
     <!-- 3 section -->
-    <div class="customdiv">
+    <div id="meseg" class="customdiv">
         <h2><b>Message Us</b></h2>
-        <div class="div2">
-            <form action="" method="post">
-                <label for="Nama">Nama</label>
+        <div>
+            <form id="message-form"></form>
+                <label for="nama">Nama</label>
                 <span>:</span>
-                <input id="Nama" type="text">
+                <input id="nama" type="text">
                 <br />
-                <label for="Tanggal Lahir">Tanggal Lahir</label>
+                <label for="tl">Tanggal Lahir</label>
                 <span>:</span>
-                <input id="Tanggal Lahir" type="date">
+                <input id="tl" type="date">
                 <br />
-                <label for="Jenis Kelamin">Jenis Kelamin</label>
+                <label for="jk">Jenis Kelamin</label>
                 <span>:</span>
-                <input type="radio" id="laki-laki" name="Jenis Kelamin" value="laki-laki">
+                <input type="radio" id="lk" name="Jenis Kelamin" value="laki-laki">
                 Laki-Laki</label>
-                <input type="radio" id="Perempuan" name="Jenis Kelamin" value="Perempuan">
+                <input type="radio" id="p" name="Jenis Kelamin" value="Perempuan">
                 Perempuan</label>
                 <br />
                 <label for="Pesan">Pesan</label>
                 <span>:</span>
                 <textarea> Pesan</textarea>
                 <br />
-                <button type="submit">
+                <button id="submit-button" class="button2" type="submit">
                     Submit
                 </button>
             </form>
@@ -82,10 +102,12 @@
     </div>
 
     <!-- Footer -->
-
+<script src="/js/script.js"></script>
 </body>
 <footer>
-    <p>Created by me</p>
+    <div class="divfooter">
+        <p>Created by me</p>
+    </div>
 </footer>
 
 </html>
