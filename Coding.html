@@ -8,11 +8,31 @@
 
 <!-- Header -->
 <header>
-    <div class="customdiv">
-        <div class="div3">
+    <div class="divheader">
+        <div class="divkanan">
             <img class="circle2" src="./etc/Doom.png">
-
+            <div>
+                <button>
+                    <a href="Coding.html" target="_blank">
+                        Home
+                    </a>
+                </button>
+                <button>
+                    <a href="ourprofile.html" target="_blank">
+                        Our Profile
+                    </a>
+                </button>
+                <button onclick="window.open('Portofolio.html','_blank');">
+                    Portofolio
+                </button>
+                <button id="message-us-button">
+                    Message Us
+                </button>
+            </div>
         </div>
+    </div>
+    </div>
+    </div>
     </div>
 </header>
 
@@ -21,7 +41,7 @@
     <!-- 1 section -->
     <div class="customdiv">
         <div>
-            <h2>Hi name, Welcome To Website</h2>
+            <h2>Hi <span id="name">name</span>, Welcome To Website</h2>
             <p> Ini adalah website latihan pertama</p>
         </div>
         <img src="./etc/Main.jpg">
@@ -47,34 +67,33 @@
     </div>
 
     <!-- 3 section -->
-    <div class="customdiv">
+    <div id="meseg" class="customdiv">
         <h2><b>Message Us</b></h2>
-        <div class="div2">
-            <form action="" method="post">
-                <label for="Nama">Nama</label>
-                <span>:</span>
-                <input id="Nama" type="text">
-                <br />
-                <label for="Tanggal Lahir">Tanggal Lahir</label>
-                <span>:</span>
-                <input id="Tanggal Lahir" type="date">
-                <br />
-                <label for="Jenis Kelamin">Jenis Kelamin</label>
-                <span>:</span>
-                <input type="radio" id="laki-laki" name="Jenis Kelamin" value="laki-laki">
-                Laki-Laki</label>
-                <input type="radio" id="Perempuan" name="Jenis Kelamin" value="Perempuan">
-                Perempuan</label>
-                <br />
-                <label for="Pesan">Pesan</label>
-                <span>:</span>
-                <textarea> Pesan</textarea>
-                <br />
-                <button type="submit">
-                    Submit
-                </button>
+        <div>
+            <form id="message-form"></form>
+            <label for="nama">Nama</label>
+            <span>:</span>
+            <input id="nama" type="text">
+            <br />
+            <label for="tanggal-lahir">Tanggal Lahir</label>
+            <span>:</span>
+            <input id="tanggal-lahir" type="date">
+            <br />
+            <label for="jk">Jenis Kelamin</label>
+            <span>:</span>
+            <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-Laki">
+            <label for="laki-laki">Laki-Laki</label>
+            <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan">
+            <label for="perempuan">Perempuan</label>
+            <br />
+            <label for="pesan">Pesan</label>
+            <span>:</span>
+            <textarea id="pesan" placeholder="Tulis pesan Anda di sini"></textarea>
+            <br />
+            <button type="button" id="submit-button" class="button2">Submit</button>
             </form>
-
+            <textarea id="isi-message">
+</textarea>
             <div>
 
             </div>
@@ -82,10 +101,12 @@
     </div>
 
     <!-- Footer -->
-
+    <script src="/js/script.js"></script>
 </body>
 <footer>
-    <p>Created by me</p>
+    <div class="divfooter">
+        <p>Created by me</p>
+    </div>
 </footer>
 
 </html>

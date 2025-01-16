@@ -7,12 +7,26 @@
     width: 200px;
     height: 200px;
 }
+.divheader{
+    padding: 12px;
+    border:  1px, black, solid;
+    text-align: right;
+}
 .div2{
     display: flex;
     text-align: center;
 }
 .div3{
     padding: 12px;
+}
+.divkanan{
+    display: flex;
+    justify-content: space-between;
+}
+.divfooter{
+    padding: 12px;
+    border:  1px, black, solid;
+    text-align: right;
 }
 .circle2{
     border-radius: 100%;
@@ -29,9 +43,9 @@ td {
     text-align: center;
 }
 form {
-    width: 781px;
+    width: 1;
 }
-button {
+.button2 {
     width: 65.4%;
 }
 label {
