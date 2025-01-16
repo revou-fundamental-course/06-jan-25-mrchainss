@@ -1,0 +1,50 @@
+.customdiv{
+    padding: 12px;
+    border:  1px, black, solid;
+}
+.circle{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+.div2{
+    display: flex;
+    text-align: center;
+}
+.div3{
+    padding: 12px;
+}
+.circle2{
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+table, th, td{
+    border: 2px solid black;
+}
+th {
+    background-color: #80808045;
+}
+td {
+    text-align: center;
+}
+form {
+    width: 781px;
+}
+button {
+    width: 65.4%;
+}
+label {
+    display: inline-block;
+    width: 100px;
+}
+input#Nama {
+    width: 50%;
+}
+
+input#Tanggal\ Lahir {
+    width: 50%;
+}
+textarea {
+    width: 50%;
+}
