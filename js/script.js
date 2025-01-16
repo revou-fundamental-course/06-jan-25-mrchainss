@@ -6,10 +6,14 @@ document.getElementById("message-us-button").addEventListener("click", function 
 document.getElementById("submit-button").addEventListener("click", function () {
     const inputNama = document.getElementById("nama").value.trim();
     const nameSpan = document.getElementById("name");
-    if (inputNama) {
-        nameSpan.textContent = inputNama;
+    const inputPesan = document.getElementById("pesan").value.trim();
+    const jenisKelamin = document.querySelector('input[name="jenis-kelamin"]:checked');
 
-    const inputNama = document.getElementById("tl").value.trim();
-    const nameSpan = document.getElementById("tl");
-}
-});
+    nameSpan.textContent = inputNama;
+
+    let messageContent = `Nama: ${inputNama || "Tidak diisi"}\n`;
+    messageContent += `Jenis Kelamin: ${jenisKelamin.value}\n`;
+    messageContent += `Pesan: ${inputPesan || "Tidak ada pesan"}`;
+    const isiMessage = document.getElementById("isi-message");
+    isiMessage.value = messageContent;
+})

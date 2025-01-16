@@ -19,7 +19,7 @@
                 </button>
                 <button>
                     <a href="ourprofile.html" target="_blank">
-                    Our Profile
+                        Our Profile
                     </a>
                 </button>
                 <button onclick="window.open('Portofolio.html','_blank');">
@@ -71,30 +71,29 @@
         <h2><b>Message Us</b></h2>
         <div>
             <form id="message-form"></form>
-                <label for="nama">Nama</label>
-                <span>:</span>
-                <input id="nama" type="text">
-                <br />
-                <label for="tl">Tanggal Lahir</label>
-                <span>:</span>
-                <input id="tl" type="date">
-                <br />
-                <label for="jk">Jenis Kelamin</label>
-                <span>:</span>
-                <input type="radio" id="lk" name="Jenis Kelamin" value="laki-laki">
-                Laki-Laki</label>
-                <input type="radio" id="p" name="Jenis Kelamin" value="Perempuan">
-                Perempuan</label>
-                <br />
-                <label for="Pesan">Pesan</label>
-                <span>:</span>
-                <textarea> Pesan</textarea>
-                <br />
-                <button id="submit-button" class="button2" type="submit">
-                    Submit
-                </button>
+            <label for="nama">Nama</label>
+            <span>:</span>
+            <input id="nama" type="text">
+            <br />
+            <label for="tanggal-lahir">Tanggal Lahir</label>
+            <span>:</span>
+            <input id="tanggal-lahir" type="date">
+            <br />
+            <label for="jk">Jenis Kelamin</label>
+            <span>:</span>
+            <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-Laki">
+            <label for="laki-laki">Laki-Laki</label>
+            <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan">
+            <label for="perempuan">Perempuan</label>
+            <br />
+            <label for="pesan">Pesan</label>
+            <span>:</span>
+            <textarea id="pesan" placeholder="Tulis pesan Anda di sini"></textarea>
+            <br />
+            <button type="button" id="submit-button" class="button2">Submit</button>
             </form>
-
+            <textarea id="isi-message">
+</textarea>
             <div>
 
             </div>
@@ -102,7 +101,7 @@
     </div>
 
     <!-- Footer -->
-<script src="/js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 <footer>
     <div class="divfooter">
